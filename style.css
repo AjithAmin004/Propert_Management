@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #E0DDAA;
+}
+.head-cont{
+    background-color: #203239;
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.add-btn{
+    background-color: #E0DDAA;
+    color:#203239;
+    width: 6rem;
+    height: 6vh;
+    border-radius: 5px;
+    font-size: 2.5rem;
+    padding-left: 1.75rem;
+}
+.tog-btn{
+    background-color: #E0DDAA;
+    color:#203239;
+    width: 6rem;
+    height: 6vh;
+    border-radius: 5px;
+    font-size: 2.5rem;
+    padding-left: 1.75rem;
+}
+
+.del-btn{
+    background-color: #E0DDAA;
+    color:#203239;
+    width: 6rem;
+    height: 6vh;
+    border-radius: 4px;
+    font-size: 2.5rem;
+    padding-left: 1.75rem;
+}
+
+.head-cont i{
+     cursor: pointer;
+}
+
+.modal-cont{
+    position: absolute;
+    top: 25vh;
+    left: 25vw;
+    width: 50vw;
+    height: 40vh;
+    background-color: #203239;
+     display:none; 
+    color: #E0DDAA;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+label{
+    margin:1vw;
+    width: 48vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+input,textarea{
+    padding: .3rem;
+    outline: none;
+    width: 30vw;
+    height: 6vh;
+    font-size: 1.5rem;
+    color: #203239;
+    background-color: #E0DDAA;
+    font-style: italic;
+    border-radius: 5px;
+}
+textarea{
+    resize: none;
+    height: 10vh;
+}
+button{
+    width: 6rem;
+    height: 6vh;
+    border-radius: 4px;
+    color: #203239;
+    background-color: #F1E0AC;
+    border: none;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+}
+
+.main-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+    width:16rem;
+    height: 20vh;
+    word-break: break-all;
+    background-color: #203239;
+    color: #E0DDAA;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    gap: .2rem;
+    overflow: auto;
+}
+
+#dName{
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    label {
+      flex-direction: column;
+      width: 75vw;
+      margin-bottom:2vh;
+      margin-top: 1vh;
+    }
+    .modal-cont{
+        top: 20vh;
+        left: 10vw;
+        width: 80vw;
+        height:60vh;
+    }
+    .btn{
+        width: 80vw;
+    }
+    input,textarea{
+        width: 75vw;
+    }
+  }
