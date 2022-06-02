@@ -142,6 +142,9 @@ button{
         width: 80vw;
         height:60vh;
     }
+   .head-cont i{
+     font-size:1.5rem;
+}
     .btn{
         width: 80vw;
     }
